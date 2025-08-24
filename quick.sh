@@ -13,7 +13,7 @@ int main(void)
 source_build="#!/bin/bash
 
 CC='gcc'
-CFLAGS='-Wall -Wextra -std=c99 -fsanitize=address,undefined'
+CFLAGS='-Wall -Wextra -Wconversion -Wstrict-prototypes -std=c99 -fsanitize=address,undefined'
 
 set -xe
 
