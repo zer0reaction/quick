@@ -22,13 +22,8 @@ int main(void) {
 source_build="#!/bin/bash
 
 CC='gcc'
-
-WARNFLAGS='-Wall -Wextra -Wconversion -Wunused -Wfloat-equal -Wundef
--Wshadow -Wpointer-arith -Wcast-align -Wstrict-prototypes
--Wwrite-strings -Wswitch-default -Wswitch-enum -Wunreachable-code
--Wformat=2 -Wuninitialized -Winit-self'
-
-CFLAGS='-O2 -std=c99 -fsanitize=address,undefined'
+WARNFLAGS='-Wall -Wextra -Wconversion'
+CFLAGS='-O0 -std=c99 -ggdb'
 
 set -xe
 
